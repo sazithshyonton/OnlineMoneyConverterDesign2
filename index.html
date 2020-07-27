@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+	<title> Converter</title>
+
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+	<section>
+		<div class="convert">
+			<div>
+			<h1 class="custom-h1">Welcome to Online Currency Converter</h1>
+		</div>
+		<div class="app_description">
+				Here you can easyly convert your money. This website is an assignment of my Web Engineering Lab
+			</div>
+		</div>
+	</section>
+	<br>
+	<br>
+
+	<section>
+		<div class="conDiv">
+		<form name="converter">
+
+        <fieldset>
+
+            <input type="number" name="taka" required placeholder="Amount">
+            <br>
+            <select name="currency" id="inputCurrency" onchange="Converter()" onclick="Converter()" oninput="Converter()" style="margin-top: 20px;">
+                <option value="bdt">BDT</option>
+                <option value="usd">USD</option>
+                <option value="cad">CAD</option>
+                <option value="eur">EUR</option>
+            </select>
+            <br>
+
+            <input type="button" value="Convert" onclick="Converter(converter.taka.value)"style="margin-top: 20px;"><br><br>
+            <label style="padding-left: 50px;">BDT: </label>
+
+            <input id="BDT" style="margin-right: 20px; "><br><br>
+
+            <label style=" padding-left: 75px;">USD:</label>
+
+            <input id="USD" style="margin-right: 40px; "><br><br>
+
+            <label style="margin-left: 50px;">CD: </label>
+
+            <input id="CAD"><br><br>
+
+            <label style="margin-left: 60px;">Euro: </label>
+
+            <input id="EUR"><br><br>
+ 
+            <input type="reset" value="Try-Again" style="margin-left: 40px;margin-top: 10px;">
+
+        </fieldset>
+    </form>
+    </div>
+	</section>
+	
+
+
+	<footer>
+		<div class="footer">
+        	<div class="footer_item copyright "> Design & Developed By Sazith Shyonton
+        	</div>	
+        
+    	</div>
+
+	</footer>
+
+
+	<script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+
+
+</html>
